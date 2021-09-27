@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic 5 Geolocation Demo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="geoInformation()" color="danger">
+    Get Device Location
+  </ion-button>
+
+  <ion-item>
+    <strong>Location Information</strong>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Latitue</ion-label>
+    <ion-badge color="secondary">{{lat}}</ion-badge>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Longitude</ion-label>
+    <ion-badge color="tertiary">{{long}}</ion-badge>
+  </ion-item>
+
+</ion-content>
